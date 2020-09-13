@@ -1,0 +1,28 @@
+<!-- 这个界面要完成以下一些功能
+1.输入框内的字不得少于20个字，否则不予发布。√
+2.发送前，必须检测到处于登陆状态，否则不允许发布√
+3.点击+号可以上传图片。√
+4.设计一个相应的数据库、存储空间，来保存输入的内容，上传的照片,对应内容的评论(评论也是一个集合，得有评论人的id)，点赞数量
+5.长传完毕后，弹框提示，发表成功，为你跳转到树洞页面。
+ -->
+<view class="scrollview">
+	<!--输入  -->
+	<scroll-view style="height:100px" scroll-y='true' scroll-x='true'>
+		<textarea placeholder="在这里输入..." placeholder-style="color:gray" maxlength="200" auto-focus="true" focus="true" bindinput="content"></textarea>
+	</scroll-view>
+
+	<view class="liubai">
+		<!-- 手机键盘回收 -->
+	</view>
+
+	<!--上传图片 -->
+	<view class="upload" style="width:80px;height:80px">
+		<image wx:if="{{imgUrl}}" src="{{imgUrl}}" mode='scaleToFill' style="width:80px;height:80px" bindtap="preview" />
+		<button wx:else bindtap="upload" style='background-color:rgb(214, 214, 194)'>+</button>
+		<icon type='clear' class="clear" bindtap='delete_img' style='display:{{clear}}'></icon>
+	</view>
+</view>
+<!-- 提交 -->
+<view class="submit" bindtap='sending'>
+	<button>发送</button>
+</view>

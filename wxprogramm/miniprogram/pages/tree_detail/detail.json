@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "hole-comment":"../../components/hole-comment/hole-comment",
+    "hole-content":"../../components/hole-content/hole-content"
+  }
+}

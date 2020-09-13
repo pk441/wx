@@ -1,0 +1,9 @@
+<!-- 这里是个人信息页面 -->
+在页面渲染中缺少头像和昵称，我们就先实现这两个信息
+<view>
+	<view class='nickname'>
+  
+	</view>
+	<view class="avator">
+  </view>
+</view>

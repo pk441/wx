@@ -1,0 +1,92 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"enhance": true
+	},
+	"appid": "wx7f1b4a60b75c4194",
+	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "pages/tree_branch/tree_branch",
+					"pathName": "pages/tree_branch/tree_branch",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tree_hole/tree_hole",
+					"pathName": "pages/tree_hole/tree_hole",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/hole-content/hole-content",
+					"pathName": "components/hole-content/hole-content",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/tree_register/tree_register",
+					"pathName": "pages/tree_register/tree_register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评论页面",
+					"pathName": "pages/tree_detail/detail",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

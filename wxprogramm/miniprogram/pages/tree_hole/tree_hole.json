@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "hole-content":"../../components/hole-content/hole-content"
+  }
+}

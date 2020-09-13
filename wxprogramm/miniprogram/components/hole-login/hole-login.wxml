@@ -1,0 +1,27 @@
+<!-- 登陆界面 -->
+<view class="login">
+	<form bindsubmit="formsubmit">
+		<!-- 用户名 -->
+		<view class="username">
+			<input value="用户名" class="user"></input>
+			<input placeholder="请输入用户名" type="text" class="user_input" name='username'></input>
+		</view>
+
+		<!-- 用户密码 -->
+		<view class="password">
+			<input value="登陆密码" class="psd"></input>
+			<input placeholder="请输入登陆密码" type="number" class="psd_input" password="true" name='password'></input>
+		</view>
+
+		<!-- 提交 -->
+		<button form-type="submit" class="btn" style="width:100%;margin-top:20%">登陆</button>
+		<!-- 文字说明 -->
+		<view style="margin-top:10px" bindtap='hole_register'>没有账号，点我注册</view>
+	</form>
+</view>
+<view class="footer">
+	<view class="left"></view>
+	<view class="center">微信授权登陆</view>
+	<view class="right"></view>
+</view>
+<view class="icon"><text class="iconfont icon-weixin1"></text></view>

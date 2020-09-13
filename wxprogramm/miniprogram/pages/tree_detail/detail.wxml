@@ -1,0 +1,26 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<!-- 1.点击跳转到detail页面 √
+2.完成布局 √
+3.评论的输入框  √
+4.数据的加载 
+5.评论数据的加载,首先用户可以点击发表评论的时候
+ -->
+<view class="comment">
+	<hole-content avator='{{userInfo.avatorUrl}}' name="{{userInfo.name}}" content='{{userInfo.content}}' publish_time="{{userInfo.publish_time}}" goods="{{userInfo.goods}}" imageUrl="{{userInfo.imageUrl}}"></hole-content>
+	<view>热门评论</view>
+	<view class="comment_position">
+		<view wx:if="{{userInfo.comments.length==0}}">
+			空空如也
+		</view>
+		<view wx:else>
+			<view wx:for="{{userInfo.comments}}">
+				<hole-comment name="{{item.name}}" avator="{{item.avatarUrl}}" time="{{item.publish_time}}" comment="{{item.comment}}"></hole-comment>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="zw">加载更多</view>
+<view class="formstyle">
+	<input class="input_comment" placeholder="发表你的评论" bindinput='inputing' maxlength="50"></input>
+	<text class="iconfont icon-comment" bindtap='send_comment'></text>
+</view>

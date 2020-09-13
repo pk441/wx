@@ -1,0 +1,86 @@
+<!-- 页面分为两部分-->
+<!-- 第一部分由一个轮播图和一个三列数据组成 -->
+<view class='up'>
+	<!-- flex布局之后，表明这个容器是弹性盒子模型，一般不需要指定高度，宽度默认撑满这个页面 -->
+	<view class="img">
+		<cover-image src='../../images/swiper3.jpg' style="height:150px"></cover-image>
+	</view>
+	<!-- 最外层rcord设置为flex布局，排布方向为x周，里面分为三个flex布局的one、two、three，每个里面的布局方式纵向排布 -->
+	<view class="record">
+		<view class="one">
+			<view>0</view>
+			<view>浏览历史</view>
+		</view>
+		<view class="two">
+			<view>0</view>
+			<view>亲密树洞</view>
+		</view>
+		<view class="three">
+			<view>0</view>
+			<view>心灵笔记</view>
+		</view>
+	</view>
+</view>
+<!-- 第二部分，小卡片列表，具备跳转功能 -->
+<view class='down'>
+	<view class="list">
+		<!-- 完成每一个view的跳转功能，跳转后是可以回到原来的页面的，分享功能 -->
+		<view class="one-left">
+			<view class="one-left-one">
+				<view>
+					<icon class='iconfont icon-menu_fold'></icon>
+				</view>
+				<view>历史情绪</view>
+			</view>
+			<view class="one-right">
+				<view>
+					<icon class='iconfont icon-right_blod'></icon>
+				</view>
+			</view>
+		</view>
+		<view class="one-left" bindtap="home_share">
+			<view class="one-left-one">
+				<icon class="iconfont icon-share"></icon>
+				<view>好物分享</view>
+			</view>
+			<view class="one-right">
+				<view>
+					<icon class='iconfont icon-right_blod'></icon>
+				</view>
+			</view>
+
+
+		</view>
+		<view class="one-left" bindtap="home_about">
+			<view class="one-left-one">
+				<icon class="iconfont icon-horn_fill"></icon>
+				<view>关于应用</view>
+			</view>
+			<view class="one-right">
+				<view>
+					<icon class='iconfont icon-right_blod'></icon>
+				</view>
+			</view>
+		</view>
+		<view class="one-left" bindtap="homePrd_detail">
+			<view class="one-left-one">
+				<icon class="iconfont icon-pinglun"></icon>
+				<view>个人中心</view>
+			</view>
+			<view class="one-right">
+					<view><icon class='iconfont icon-right_blod'></icon></view>
+			</view>
+
+
+		</view>
+		<view class="one-left" bindtap="home_register">
+			<view class="one-left-one">
+				<icon class="iconfont icon-check"></icon>
+				<view>账号注册</view>
+			</view>
+			<view class="one-right">
+					<view><icon class='iconfont icon-right_blod'></icon></view>
+			</view>
+		</view>
+	</view>
+</view>

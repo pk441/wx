@@ -1,0 +1,50 @@
+page {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollview {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.liubai {
+  height: 50px;
+  width: 100%;
+  align-self: center;
+}
+
+.upload {
+  /* 黑 红 蓝 */
+  display: flex;
+  background-color: rgb(214, 214, 194);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.submit {
+  display: flex;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.submit button {
+  width: 100%;
+  background-color: rgb(34 145 256);
+}
+
+.upload_img {
+  position: absolute;
+  border: 1px solid green;
+  z-index: 1;
+}
+
+.clear{
+  position: absolute;
+  transform: translate(39px,-39px);
+}

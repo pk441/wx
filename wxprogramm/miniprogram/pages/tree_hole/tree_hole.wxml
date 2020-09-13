@@ -1,0 +1,14 @@
+<!-- 头部轮播区 -->
+<view class="header">
+	<swiper indicator-dots="true" indicator-color="white" indicator-active-color="black" autoplay="true" current="0" interval="4000">
+		<view wx:for="{{imgUrl}}" wx:key="">
+			<swiper-item>
+				<image src="{{item}}" mode="aspectFit" style="width:100%" />
+			</swiper-item>
+		</view>
+	</swiper>
+</view>
+<!-- 内容区域-->
+<view wx:for="{{message_array}}">
+	<hole-content avator='{{item.avatorUrl}}' name="{{item.name}}" content='{{item.content}}' publish_time="{{item.publish_time}}" goods="{{item.goods}}" imageUrl="{{item.imageUrl}}" bind:plus='plus' data-id='{{index}}' bind:tree_detail='to_treeDetail'></hole-content>
+</view>

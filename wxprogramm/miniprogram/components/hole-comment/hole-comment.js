@@ -1,0 +1,21 @@
+// miniprogram/components/hole-comment/hole-comment.js
+Component({
+  properties:{
+    avator:{
+      type:'String',
+      value:''
+    },
+    name:{
+      type:'String',
+      value:''
+    },
+    time:{
+      type:'String',
+      value:''
+    },
+    comment:{
+      type:'String',
+      value:''
+    },
+  }
+})

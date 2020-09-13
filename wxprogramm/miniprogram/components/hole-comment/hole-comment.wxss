@@ -1,0 +1,58 @@
+@import "../../static/iconfont.wxss";
+page{
+  width: 100%;
+  height: 100%;
+}
+.comment{
+  /* 不要给flex布局的东西设置宽度 */
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+ .head{
+   height: 30px;
+   flex-basis: 0;
+   flex-grow: 1;
+ }
+
+ .word{
+   /* flex-basis和flex-grow配合使用 */
+   flex-basis: 0;
+   flex-grow: 4;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+ }
+
+.dianzan-pinglun{
+  width: 100%;
+  display: flex;
+}
+
+.dianzan-pinglun .name{
+  flex-basis: 0;
+  flex-grow: 8;
+  display: flex;
+  font-size: 13px;
+}
+
+.icon{
+  flex-basis: 0;
+  flex-grow: 2;
+  display: flex;
+  /* margin-left会造成flex里面一些属性失效 */
+  /* margin-left:60%; */
+  align-items: center;
+}
+
+
+.time{
+  font-size: 10px;
+}
+ .comment_line{
+   padding: 10rpx;
+   font-size: 30rpx;
+   margin-top:10rpx
+ }

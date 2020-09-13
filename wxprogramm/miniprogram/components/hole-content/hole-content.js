@@ -1,0 +1,65 @@
+// 
+Component({
+  properties:{
+    //头像地址
+    avator:{
+      type:'String',
+      value:'',
+    },
+    imageUrl:{
+      type:'String',
+      value:'',
+    },
+    //昵称
+    name:{
+      type:'String',
+      value:'123'
+    },
+    //文章内容
+    content:{
+      type:'String',
+      value:''
+    },
+    //文章发表时间
+    publish_time:{
+      type:'String',
+      value:''
+    },
+    //点赞数量
+    goods:{
+      type:'String',
+      value:''
+    },
+  },
+  methods:{
+    plus_good:function(ev){
+      console.log(ev);
+      const _this=this;
+      console.log(111111);
+      wx.getStorage({
+        key: '_openid',
+        fail(e){
+          wx.showToast({
+            title: '请先登陆',
+          })
+        },
+        success(e){
+          console.log(e);
+          _this.triggerEvent('plus',ev,e);
+        }
+
+      })
+    },
+    to_treeDetail:function(ev){
+      console.log('准备评论',ev);
+      this.triggerEvent('tree_detail',ev,ev);
+    },
+    preview:function(ev){
+      console.log(ev);
+      console.log('预览图片');
+      wx.previewImage({
+        urls: [this.properties.imageUrl],
+      })
+    }
+  }
+})

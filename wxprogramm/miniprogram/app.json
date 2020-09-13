@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tree_login/tree_login",
+    "pages/tree_home/tree_home",
+    "pages/tree_branch/tree_branch",
+    "pages/tree_register/tree_register",
+    "components/hole-content/hole-content",
+    "components/hole-comment/hole-comment",
+    "pages/tree_hole/tree_hole",
+    "components/hole-register/hole-register",
+    "components/hole-login/hole-login",
+    "pages/tree_detail/detail",
+    "pages/tree_center/tree_center"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "解忧小树屋",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/tree_hole/tree_hole",
+        "text": "树洞",
+        "iconPath": "../miniprogram/images/treehole.png",
+        "selectedIconPath": "../miniprogram/images/treehole_sel.png"
+      },
+      {
+        "pagePath": "pages/tree_branch/tree_branch",
+        "text": "树枝",
+        "iconPath": "../miniprogram/images/treeleaf.png",
+        "selectedIconPath": "../miniprogram/images/treeleaf_sel.png"
+      },
+      {
+        "pagePath": "pages/tree_home/tree_home",
+        "text": "树屋",
+        "iconPath": "../miniprogram/images/treehouse.png",
+        "selectedIconPath": "../miniprogram/images/treehouse_sel.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

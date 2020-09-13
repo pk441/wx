@@ -1,0 +1,17 @@
+<!--miniprogram/components/hole-comment/hole-comment.wxml-->
+<view class="comment">
+	<!-- 头像 -->
+	<image src='{{avator}}' mode="aspectFit" class="head" />
+	<!-- 评论 -->
+	<view class="word">
+		<view class="dianzan-pinglun">
+			<view class="name">{{name}}</view>
+			<view class="icon">
+				<text class="iconfont icon-dianzan"></text>
+			</view>
+
+		</view>
+		<text class='time'>{{time}}</text>
+		<view class='comment_line'>{{comment}}</view>
+	</view>
+</view>

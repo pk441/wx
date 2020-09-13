@@ -1,0 +1,101 @@
+@import "../../static/weixinfont.wxss";
+.login{
+display: flex;
+flex-direction: column;
+}
+form{
+  padding: 20px;
+  margin-top: 20px;
+}
+.username,.password,.Verification_code{
+  display: flex;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-weight: bold;
+  background-color: rgb(245, 245, 240);
+  justify-content: center;
+  align-items: center;
+}
+
+.user,.user_input,.psd,.psd_input,.vcode,.vode_input{
+  padding: 2px;
+}
+
+.user,.psd{
+  flex-basis: 0;
+  flex-grow: 1.5;
+}
+
+.vcode{
+  flex-basis: 0;
+  flex-grow: 1.5;
+}
+
+.vcode_input{
+  flex-basis: 0;
+  flex-grow: 3;
+}
+
+.btn_vcode{
+  flex-basis: 0;
+  flex-grow: 1.8;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 152, 255);
+}
+
+.user_input,.psd_input{
+  flex-basis: 0;
+  flex-grow: 3;
+}
+
+.btn{
+  display: flex;
+  /* 设置完flex后，width设置会失效果，一般建议在style中设置，优先级别高 */
+  /* width: 100%; */
+  background-color: rgb(0, 152, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  display: flex;
+  margin-top: 15%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.left{
+  background-color:rgb(224, 224, 209);
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 3px;
+}
+
+.center{
+  margin: 8px;
+}
+
+.right{
+  background-color:rgb(224, 224, 209);
+  flex-basis: 0;
+  height: 3px;
+  flex-grow: 1;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+}
+
+.iconfont{
+  font-size: 40px;
+  color:rgb(102, 255, 51);
+}
+button{
+  background-color: #fff                        
+
+}
+

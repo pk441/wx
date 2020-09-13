@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "hole-register":"../../components/hole-register/hole-register"
+  }
+}

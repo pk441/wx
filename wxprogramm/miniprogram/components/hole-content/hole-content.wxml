@@ -1,0 +1,40 @@
+<slot></slot>
+<!--  -->
+<view class="container">
+	<!-- 头像 -->
+	<view class="header">
+		<image src='{{avator}}' />
+	</view>
+
+	<!-- 内容 -->
+	<view class="content">
+
+		<view class="content_1">
+			<text class="txt">{{name}}</text>
+			<view>
+				<button size="mini" style="width:40px;height:20px" plain="true">关注</button>
+				<text class="iconfont icon-gengduo"></text>
+			</view>
+		</view>
+		<view class="content_2">
+			{{content}}
+		</view>
+
+
+		<view class="content_3">
+			<view class="conntent_3_image">
+				<image src='{{imageUrl}}' bindtap='preview' mode='aspectFit' />
+			</view>
+			<view>
+				<text class="time">{{publish_time}}</text>
+				<view class='icon'>
+					<text class="iconfont icon-ai-like" bindtap="plus_good">{{goods}}</text>
+					<text class="iconfont icon-pinglun" bindtap='to_treeDetail'></text>
+				</view>
+
+
+			</view>
+		</view>
+	</view>
+</view>
+<slot></slot>

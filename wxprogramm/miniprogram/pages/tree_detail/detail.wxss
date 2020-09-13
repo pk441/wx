@@ -1,0 +1,30 @@
+/* miniprogram/pages/detail/detail.wxss */
+@import "../../static/iconfont.wxss";
+page{
+  width: 100vh;
+}
+.comment{
+  padding: 10rpx;
+}
+.formstyle{
+  position: fixed;
+  bottom: 0rpx;
+  width: 100vw;
+  height: 5vh;
+  padding: 2px;
+  background-color: rgb(240, 240, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zw{
+  height: 60px;
+  text-align: center;
+}
+.input_comment{
+  border-radius: 10px;
+  width: 80vw;
+  background-color: white;
+  margin-right: 5px;
+}
+

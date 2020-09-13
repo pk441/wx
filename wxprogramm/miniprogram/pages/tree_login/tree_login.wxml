@@ -1,0 +1,2 @@
+<!--miniprogram/pages/tree_login/tree_login.wxml-->
+<tree-login bindmysubmit='tree_login' bindtreelogin='tree_register'></tree-login>

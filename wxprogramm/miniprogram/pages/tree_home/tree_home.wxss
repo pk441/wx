@@ -1,0 +1,73 @@
+@import '../../static/tree_home.wxss';
+
+.up {
+  display: flex;
+  flex-direction: column;
+  /* box-shadow属性 */
+  box-shadow: 0px 3px 10px 1px rgba(204, 204, 204, 0.6)
+}
+
+.record {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+
+.one,
+.two,
+.three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 3;
+}
+
+.down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50rpx;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1em;
+  flex-basis: 0;
+  flex-grow: 4;
+  box-shadow: 0px 3px 10px 1px rgba(204, 204, 204, 0.6);
+  padding: 30rpx;
+}
+
+.one-left {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 0;
+  flex-grow: 5;
+  text-align: center;
+  padding: 20rpx;
+  border-bottom: 1px solid grey;
+}
+
+.one-left-one {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 3;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.one-right {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
